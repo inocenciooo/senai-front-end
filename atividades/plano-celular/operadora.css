@@ -1,0 +1,75 @@
+.plano {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    align-self: self-start;
+    margin: 0 auto;
+    background-color: rgb(10, 100, 100);
+    color: white;
+    border-radius: 10px;
+    padding: 12px 25px;
+    border: 2px solid black;
+    box-shadow: -4px 4px 0px 0px black;
+}
+
+
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead th {
+    background-color: rgb(10, 100, 100);
+    color: white;
+}
+
+tbody tr,
+button,
+td p {
+    transition: 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(8, 172, 172, 0.116);
+}
+
+tbody tr:hover {
+    background-color: rgb(30, 151, 151);
+    color: white;
+}
+
+td,
+th {
+    padding: 8px;
+}
+
+
+tfoot td p {
+    background-color: rgb(30, 151, 151);
+    color: white;
+    margin: .5em;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: -4px 4px 0px 0px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+button:hover,
+tfoot td p:hover {
+    transform: translate(2px, -5px);
+}
